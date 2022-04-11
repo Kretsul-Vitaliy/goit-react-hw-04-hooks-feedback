@@ -30,7 +30,7 @@ function App() {
   };
 
   const onLeaveFeedback = (option) => {
-    //первый вариант записи
+    //первый вариант записи switch
     // switch (option) {
     //   case "good":
     //     setGood((prev) => prev + 1);
@@ -46,7 +46,7 @@ function App() {
     //     break;
     // }
 
-    //второй вариант записи
+    //второй вариант записи обьектом
     setState((prev) => ({ ...prev, [option]: prev[option] + 1 }));
   };
 
